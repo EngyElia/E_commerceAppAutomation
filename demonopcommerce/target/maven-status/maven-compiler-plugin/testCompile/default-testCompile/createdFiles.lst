@@ -1,0 +1,14 @@
+Pages\P03_FollowUSPage.class
+stepDefinitions\D06_homeSlidersStepDef.class
+stepDefinitions\D08_WishlistStepDef.class
+stepDefinitions\D09_ShoppingCartStepDef.class
+stepDefinitions\D02_loginStepDef.class
+stepDefinitions\D03_currenciesStepDef.class
+stepDefinitions\D07_followUsStepDef.class
+Pages\P01_RegisterPage.class
+Pages\P02_HoverCategoriesPage.class
+stepDefinitions\Hooks.class
+stepDefinitions\D05_hoverCategoriesStepDef.class
+Runners\Test_Runner.class
+stepDefinitions\D01_registerStepDef.class
+stepDefinitions\D04_searchStepDef.class
