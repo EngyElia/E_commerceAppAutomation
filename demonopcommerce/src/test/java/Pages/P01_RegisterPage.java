@@ -113,30 +113,11 @@ public class P01_RegisterPage {
     }
 
 
-    public WebElement search_Text() {
-        WebElement search = Hooks.driver.findElement(By.id("small-searchterms"));
-        return search;
-    }
 
-    public WebElement search_Button() {
-        WebElement search_button = Hooks.driver.findElement(By.cssSelector("button[class=\"button-1 search-box-button\"]"));
-        return search_button;
-    }
-
-    public WebElement sliderNumber(String sliderNumber) {
-        WebElement slider = Hooks.driver.findElement(By.xpath("(//a[@href=\"http://demo.nopcommerce.com/\"])[" + sliderNumber + "]"));
-        return slider;
-    }
-
-    public Integer gridItem() {
-        return Hooks.driver.findElements(By.className("item-grid")).size();
-
-    }
 
     public WebElement wishListElements() {
         return Hooks.driver.findElements(By.cssSelector("button[class=\"button-2 add-to-wishlist-button\"]")).get(2);
     }
-
 
 
     public WebElement notificationMessage() {

@@ -1,45 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="361.893">
-<testcase classname="User could register with valid" name="guest user could register with valid data successfully" time="40.889">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}&#10;  (Session info: chrome=101.0.4951.67)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [71f88571c76113f48943561887be2ba8, findElement {using=class name, value=result}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:6457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6457/devtool..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 71f88571c76113f48943561887be2ba8" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user clicks on Register Tab...........................................passed
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="254.518">
+<testcase classname="User could register with valid" name="guest user could register with valid data successfully" time="23.247">
+<system-out><![CDATA[Given user clicks on Register Tab...........................................passed
 And user fills Personal Details.............................................passed
 And user put her birthdate..................................................passed
 And user put email"automation@gmail.com"....................................passed
 And company name............................................................passed
 And put password"P@ssw0rd"..................................................passed
 When user put her password and click register...............................passed
-Then check that user register successfully..................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result"}
-  (Session info: chrome=101.0.4951.67)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [71f88571c76113f48943561887be2ba8, findElement {using=class name, value=result}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:6457}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:6457/devtool..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 71f88571c76113f48943561887be2ba8
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-	at stepDefinitions.D01_registerStepDef.CheckRegister(D01_registerStepDef.java:67)
-	at ✽.check that user register successfully(file:///E:/demonopcommerce/src/main/resources/features/F01_Register.feature:12)
-]]></failure>
+Then check that user register successfully..................................passed
+]]></system-out>
 </testcase>
-<testcase classname="guest user could Login with valid credentials" name="user could Login with valid credentials" time="23.646">
+<testcase classname="guest user could Login with valid credentials" name="user could Login with valid credentials" time="17.401">
 <system-out><![CDATA[Given user clicks on login Tab and goes to Login page.......................passed
 And user put email"automation@gmail.com"....................................passed
 And put password"P@ssw0rd"..................................................passed
@@ -47,61 +19,40 @@ When click in login bottom..................................................pass
 Then Check that user login correctly........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="guest user could switch between currencies [$, €]" name="user switches between currencies US Dollar and Euro" time="66.724">
-<failure message="Could not start a new session. Response code 500. Message: chrome not reachable&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[When user chooses currency..................................................skipped
-Then currency is displayed correctly........................................skipped
-
-StackTrace:
-org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: chrome not reachable
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
-	at stepDefinitions.Hooks.openBrowser(Hooks.java:20)
-]]></failure>
+<testcase classname="guest user could switch between currencies [$, €]" name="user switches between currencies US Dollar and Euro" time="18.3">
+<system-out><![CDATA[When user chooses currency..................................................passed
+Then currency is displayed correctly........................................passed
+]]></system-out>
 </testcase>
-<testcase classname="users will be able to search for products with different parameters" name="user could search using product name" time="16.121">
+<testcase classname="users will be able to search for products with different parameters" name="user could search using product name" time="16">
 <system-out><![CDATA[When user enter product name and clicks on Search button....................passed
 Then result is displayed successfully.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="users will be able to search for products with different parameters" name="user could search using sku" time="20.762">
+<testcase classname="users will be able to search for products with different parameters" name="user could search using sku" time="18.562">
 <system-out><![CDATA[When user enter SKU and clicks on Search button.............................passed
 Then SKU results is displayed...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user could hover categories and select sub category" name="user could hover categories" time="16.007">
+<testcase classname="user could hover categories and select sub category" name="user could hover categories" time="16.1">
 <system-out><![CDATA[When user hover category "Computers" and select subcategory "desktops"......passed
 Then subcategory is displayed correctly.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="users will be able to open sliders in Homepage" name="First slider ara clickable on Homepage" time="17.46">
-<failure message="element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt; is not clickable at point (674, 430). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=101.0.4951.67)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [214523b2464a4d5d4c0e90abecc4a9f4, clickElement {id=52ef0467-427e-419f-b388-6cff2b0edf6d}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7049/devtool..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (214523b2464a4d5d4c0e90abecc4a9f4)] -&gt; xpath: (//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[1]]&#10;Session ID: 214523b2464a4d5d4c0e90abecc4a9f4" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When user clicks on first slider............................................failed
+<testcase classname="users will be able to open sliders in Homepage" name="First slider ara clickable on Homepage" time="14.594">
+<failure message="element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt; is not clickable at point (674, 430). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=102.0.5005.62)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [943ab4163239a61a58fbb3ec355cfd62, clickElement {id=b58bf640-4cbb-4939-b411-e65a1c2bae6b}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.62, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3823/devtool..., se:cdpVersion: 102.0.5005.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (943ab4163239a61a58fbb3ec355cfd62)] -&gt; xpath: (//a[@href=&quot;http://demo.nopcommerce.com/&quot;])[1]]&#10;Session ID: 943ab4163239a61a58fbb3ec355cfd62" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When user clicks on first slider............................................failed
 Then relative product for first slider is displayed.........................skipped
 
 StackTrace:
 org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a> is not clickable at point (674, 430). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
-  (Session info: chrome=101.0.4951.67)
+  (Session info: chrome=102.0.5005.62)
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'ACER8', ip: '192.168.1.21', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_331'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [214523b2464a4d5d4c0e90abecc4a9f4, clickElement {id=52ef0467-427e-419f-b388-6cff2b0edf6d}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7049/devtool..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (214523b2464a4d5d4c0e90abecc4a9f4)] -> xpath: (//a[@href="http://demo.nopcommerce.com/"])[1]]
-Session ID: 214523b2464a4d5d4c0e90abecc4a9f4
+Command: [943ab4163239a61a58fbb3ec355cfd62, clickElement {id=b58bf640-4cbb-4939-b411-e65a1c2bae6b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.62, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\acer\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:3823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3823/devtool..., se:cdpVersion: 102.0.5005.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (943ab4163239a61a58fbb3ec355cfd62)] -> xpath: (//a[@href="http://demo.nopcommerce.com/"])[1]]
+Session ID: 943ab4163239a61a58fbb3ec355cfd62
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,11 +66,11 @@ Session ID: 214523b2464a4d5d4c0e90abecc4a9f4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at stepDefinitions.D06_homeSlidersStepDef.first_Slider(D06_homeSlidersStepDef.java:14)
+	at stepDefinitions.D06_homeSlidersStepDef.first_Slider(D06_homeSlidersStepDef.java:13)
 	at ✽.user clicks on first slider(file:///E:/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:4)
 ]]></failure>
 </testcase>
-<testcase classname="users will be able to open sliders in Homepage" name="Second slider ara clickable on Homepage" time="21.967">
+<testcase classname="users will be able to open sliders in Homepage" name="Second slider ara clickable on Homepage" time="18.369">
 <failure message="expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[When user clicks on second slider...........................................passed
 Then relative product for second slider is displayed........................failed
 
@@ -131,21 +82,21 @@ java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but f
 	at org.testng.Assert.assertEquals(Assert.java:131)
 	at org.testng.Assert.assertEquals(Assert.java:655)
 	at org.testng.Assert.assertEquals(Assert.java:665)
-	at stepDefinitions.D06_homeSlidersStepDef.Second_IsDisplayed(D06_homeSlidersStepDef.java:32)
+	at stepDefinitions.D06_homeSlidersStepDef.Second_IsDisplayed(D06_homeSlidersStepDef.java:31)
 	at ✽.relative product for second slider is displayed(file:///E:/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:10)
 ]]></failure>
 </testcase>
-<testcase classname="user could open Follow US Links" name="user opens Facebook Link" time="29.184">
+<testcase classname="user could open Follow US Links" name="user opens Facebook Link" time="17.632">
 <system-out><![CDATA[When user opens Facebook Link...............................................passed
 Then "facebook" is opened in new Tab........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user could open Follow US Links" name="user opens Twitter Link" time="18.498">
+<testcase classname="user could open Follow US Links" name="user opens Twitter Link" time="19.1">
 <system-out><![CDATA[When user opens Twitter Link................................................passed
 Then "twitter" is opened in new Tab.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user could open Follow US Links" name="user opens Rss Link" time="17.868">
+<testcase classname="user could open Follow US Links" name="user opens Rss Link" time="16.474">
 <failure message="expected [https://demo.nopcommerce.com/new-online-store-is-open] but found [https://demo.nopcommerce.com/news/rss/1]" type="java.lang.AssertionError"><![CDATA[When user opens Rss Link....................................................passed
 Then "rss" is opened in new Tab.............................................failed
 
@@ -161,17 +112,17 @@ java.lang.AssertionError: expected [https://demo.nopcommerce.com/new-online-stor
 	at ✽."rss" is opened in new Tab(file:///E:/demonopcommerce/src/main/resources/features/F07_followUs.feature:16)
 ]]></failure>
 </testcase>
-<testcase classname="user could open Follow US Links" name="user opens Youtube Link" time="28.33">
+<testcase classname="user could open Follow US Links" name="user opens Youtube Link" time="26.59">
 <system-out><![CDATA[When user opens Youtube Link................................................passed
 Then "youtube" is opened in new Tab.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Guest user could add products to wishlist" name="success message is visible after adding product to wishlist" time="20.185">
+<testcase classname="Guest user could add products to wishlist" name="success message is visible after adding product to wishlist" time="15.314">
 <system-out><![CDATA[When user chooses product and press wishlist Tab............................passed
 Then notification message is displayed successfully.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Guest user could add products to Shopping Cart" name="success message is visible after adding product to Shopping Cart" time="23.3">
+<testcase classname="Guest user could add products to Shopping Cart" name="success message is visible after adding product to Shopping Cart" time="16.144">
 <system-out><![CDATA[When user chooses product and clicks on Shopping Cart.......................passed
 Then Shopping Cart message is displayed successfully........................passed
 ]]></system-out>

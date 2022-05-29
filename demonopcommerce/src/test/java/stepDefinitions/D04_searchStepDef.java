@@ -1,18 +1,19 @@
 package stepDefinitions;
 
 import Pages.P01_RegisterPage;
+import Pages.P05_SearchPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class D04_searchStepDef {
-    P01_RegisterPage registerPage =  new P01_RegisterPage();
+    P05_SearchPage searchPage = new P05_SearchPage();
     @When("user enter product name and clicks on Search button")
     public  void search() throws InterruptedException {
-        registerPage.search_Text().sendKeys("Apple");
+        searchPage.search_Text().sendKeys("Apple");
 
-        registerPage.search_Button().click();
+        searchPage.search_Button().click();
 
     }
 
@@ -26,9 +27,9 @@ public class D04_searchStepDef {
     @When("user enter SKU and clicks on Search button")
     public void sKUSearch()
     {
-        registerPage.search_Text().sendKeys("AP_MBP_13");
+        searchPage.search_Text().sendKeys("AP_MBP_13");
 
-        registerPage.search_Button().click();
+        searchPage.search_Button().click();
     }
 
     @Then("SKU results is displayed")
@@ -39,7 +40,7 @@ public class D04_searchStepDef {
         String actualResult = Hooks.driver.getCurrentUrl();
         softAssert.assertTrue(actualResult.contains(expectedResult));
 
-        softAssert.assertTrue(registerPage.gridItem() > 0);
+        softAssert.assertTrue(searchPage.gridItem() > 0);
         softAssert.assertAll();
 
     }

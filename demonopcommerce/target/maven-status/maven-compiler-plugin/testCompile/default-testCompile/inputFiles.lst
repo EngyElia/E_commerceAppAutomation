@@ -1,5 +1,6 @@
 E:\demonopcommerce\src\test\java\Runners\Test_Runner.java
 E:\demonopcommerce\src\test\java\Pages\P03_FollowUSPage.java
+E:\demonopcommerce\src\test\java\Pages\P04_SliderPage.java
 E:\demonopcommerce\src\test\java\stepDefinitions\Hooks.java
 E:\demonopcommerce\src\test\java\stepDefinitions\D08_WishlistStepDef.java
 E:\demonopcommerce\src\test\java\stepDefinitions\D04_searchStepDef.java
@@ -11,4 +12,5 @@ E:\demonopcommerce\src\test\java\stepDefinitions\D06_homeSlidersStepDef.java
 E:\demonopcommerce\src\test\java\stepDefinitions\D09_ShoppingCartStepDef.java
 E:\demonopcommerce\src\test\java\Pages\P02_HoverCategoriesPage.java
 E:\demonopcommerce\src\test\java\stepDefinitions\D01_registerStepDef.java
+E:\demonopcommerce\src\test\java\Pages\P05_SearchPage.java
 E:\demonopcommerce\src\test\java\stepDefinitions\D05_hoverCategoriesStepDef.java
